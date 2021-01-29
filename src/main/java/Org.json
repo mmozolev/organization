@@ -1,0 +1,53 @@
+{
+    "organizationsList" : [ {
+
+    "name" : "Gazprom",
+    "address" : "Moscow",
+    "phone" : "+79996669966",
+    "date" : "24/11/1991",
+    "ogrn" : "418545",
+    "inn" : "848412254845",
+    "securityList" : [
+        {
+            "code" : "1",
+            "date" : "09/01/2021",
+            "currency" : "EUR"
+        },
+        {
+            "code" : "2",
+            "date" : "30/01/2022",
+            "currency" : "EUR"
+        },
+        {
+            "code": "3",
+            "date": "17/01/2018",
+            "currency" : "EUR"
+        }
+    ] }, {
+        "name" : "Lukoil",
+        "address" : "Moscow",
+        "phone" : "+7997789966",
+        "date" : "23/06/1984",
+        "ogrn" : "154881245",
+        "inn" : "448364155",
+        "securityList" : [
+            {
+                "code" : "5",
+                "date" : "30/03/2023",
+                "currency" : "RUB"
+            },
+            {
+                "code" : "6",
+                "date" : "29/03/2021",
+                "currency" : "EUR"
+            },
+            {
+                "code": "7",
+                "date": "23/11/2024",
+                "currency" : "USD"
+            }
+            ]
+    }
+
+    ]
+}
