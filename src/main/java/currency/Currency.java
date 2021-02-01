@@ -1,4 +1,4 @@
-package organization;
+package currency;
 
 public enum Currency {
     RUB (643, "RUB"),

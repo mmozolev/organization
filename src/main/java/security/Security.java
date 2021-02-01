@@ -1,4 +1,6 @@
-package organization;
+package security;
+
+import currency.Currency;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -16,11 +18,6 @@ public class Security {
     public void setCurrency(Currency currency) {
         this.currency = currency;
     }
-
-    public void setDate(LocalDate date) {
-        this.date = date;
-    }
-
 
     public int getCode() {
         return code;

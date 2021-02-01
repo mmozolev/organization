@@ -1,5 +1,10 @@
 package organization;
 
+import security.Security;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.io.File;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeFormatterBuilder;
@@ -19,6 +24,17 @@ public class Organizations {
 
     public void setOrganizationsList(ArrayList<Organization> organizations) {
         this.organizationsList = organizations;
+    }
+
+    public static Organizations parseJson() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        File test = new File("src/main/resources/Org.json");
+        try {
+            return objectMapper.readValue(test, Organizations.class);
+        } catch (IOException e) {
+            System.out.println("Json parsing error!");
+        }
+        return null;
     }
 
     //Вывести все имеющиеся компании в формате
@@ -86,7 +102,7 @@ public class Organizations {
                         .filter(x -> x.getCurrency().getName().equals(code));
 
             list.forEach(x ->
-                System.out.printf("organization.Currency id: %d, Code: %d%n", x.getCurrency().getId(), x.getCode()));
+                System.out.printf("currency.Currency id: %d, Code: %d%n", x.getCurrency().getId(), x.getCode()));
         });
     }
 

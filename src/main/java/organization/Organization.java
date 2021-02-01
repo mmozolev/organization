@@ -1,5 +1,7 @@
 package organization;
 
+import security.Security;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -12,6 +14,8 @@ public class Organization {
     private LocalDate date;
     private String OGRN;
     private String INN;
+
+    private ArrayList<Security> securityList;
 
     public String getName() {
         return name;
@@ -72,8 +76,6 @@ public class Organization {
     public void setSecurityList(ArrayList<Security> securityList) {
         this.securityList = securityList;
     }
-
-    private ArrayList<Security> securityList;
 
     @Override
     public String toString() {
